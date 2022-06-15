@@ -1,0 +1,31 @@
+.promo
+    min-height: 100vh
+    position: relative
+    background: url("../img/myphoto.jpg")  center center/cover no-repeat 
+    padding: 190px 0 340px 0
+    &__subtitle
+        font-weight: 700
+        font-size: 16px
+        
+       
+    &__circle
+        z-index: 3
+        position: relative
+        @include before_circle
+        padding-left: 10px
+        
+
+    &__title
+        font-weight: 700
+        font-size: 48px
+        width: 530px
+    &__btns
+        display: flex
+        width: 245px
+        justify-content: space-between
+        align-items: center
+        margin-top: 30px
+    &__link
+        font-weight: 700
+        font-size: 14px
+        color: #000

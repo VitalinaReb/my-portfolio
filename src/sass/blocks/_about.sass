@@ -1,0 +1,27 @@
+.about
+    padding-top: 90px
+    &__img
+        width: 490px
+        height: 500px
+    .title_fz36
+        text-align: start
+        margin-bottom: 5px
+    &__circle
+        @include before_circle
+        position: relative
+        &::before
+            top: -50%
+            left: -10px
+            
+    .divider
+        margin-left: 0
+    &__text
+        font-weight: 500
+        font-size: 14px
+    
+    
+    &__wrapper
+        display: grid
+        width: 1040px
+        margin: 0 auto
+        grid-template-columns: repeat(2, 1fr)

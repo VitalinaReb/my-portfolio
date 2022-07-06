@@ -1,27 +1,33 @@
 .about
-    padding-top: 90px
-    &__img
-        width: 490px
-        height: 500px
+    padding-top: 120px
+    &__wrapper
+        display: grid
+        padding: 0 50px 
+        grid-template-columns: 400px 570px
+        column-gap: 60px
+    &__photo
+        img 
+            width: 100%
+        
+    .title_fz16
+        text-align: start
+        margin-top: 3px
     .title_fz36
         text-align: start
+        margin-top: 30px
         margin-bottom: 5px
     &__circle
-        @include before_circle
         position: relative
-        &::before
-            top: -50%
-            left: -10px
-            
+        padding-left: 15px
+        padding-top: 4px
+        @include before_circle
+        
     .divider
         margin-left: 0
+        margin-top: 0
     &__text
         font-weight: 500
         font-size: 14px
     
     
-    &__wrapper
-        display: grid
-        width: 1040px
-        margin: 0 auto
-        grid-template-columns: repeat(2, 1fr)
+    

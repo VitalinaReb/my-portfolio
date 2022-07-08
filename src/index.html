@@ -13,8 +13,8 @@
 </head>
 <body>
     <aside class="sidepanel">
-        <a href="#" class="sidepanel__icon"><img src="icon/Facebook.svg" alt="facebook"></a>
-        <a href="#" class="sidepanel__icon"><img src="icon/Instagram.svg" alt="instagram"></a>
+        <a href="#" class="sidepanel__icon sidepanel__telegram"><img src="icon/Telegram.svg" alt="telegram"></a>
+        <a href="#" class="sidepanel__icon"><img src="icon/insta.svg" alt="instagram"></a>
         <div class="sidepanel__divider"></div>
         <div class="sidepanel__text"><span>Social media</span></div>
     </aside>
@@ -95,6 +95,35 @@
         
     </section>
 
+    <section class="portfolio">
+        <div class="container">
+            <h2 class="title_fz16 portfolio_circle">Portfolio</h2>
+            <div class="title_fz36">My works</div>
+            <div class="divider"></div>
+            <div class="portfolio__wrapper">
+                <a href="/uber" class="portfolio__item">
+                    <img src="img/uber.jpg" alt="uber">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="img/pulse.jpg" alt="pulse">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="img/bread.jpg" alt="bread">
+                </a>
+                <a href="#" class="portfolio__item  vertical">
+                    <img src="img/plans.jpg" alt="plans">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="img/ipad.jpg" alt="ipad">
+                </a>
+                <a href="#" class="portfolio__item horizonal">
+                    <img src="img/mac.jpg" alt="mac">
+                </a>
+                
+            </div>
+        </div>
+    </section>
+
     
     <!-- <section class="use">
         <div class="container">
@@ -123,37 +152,47 @@
                     <div class="title_fz36">My name is Vitalina</div>
                     <div class="divider"></div>
                     <div class="about__text">Nice to meet you. <br>
-                        I’m web-developer at the beginning of my journey.But that will not stop you from getting the expected result, because I always invest extra to keep you happy with my work. <br> <br>
+                        I’m web-developer at the beginning of my journey. <br> But that will not stop you from getting the expected result, because I always invest extra to keep you happy with my work. <br> <br>
                         You also need to know that I speak Russian, Hebrew and a little English so we will surely be able to find a common language.</div>
                 </div>
             </div>
        </div>
     </section>
 
-    <section class="portfolio">
+    
+
+    <section class="contacts">
         <div class="container">
-            <h2 class="title_fz16 portfolio_circle">Portfolio</h2>
-            <div class="title_fz36">My works</div>
-            <div class="divider"></div>
-            <div class="portfolio__wrapper">
-                <a href="/uber" class="portfolio__item">
-                    <img src="img/uber.jpg" alt="uber">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="img/pulse.jpg" alt="pulse">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="img/bread.jpg" alt="bread">
-                </a>
-                <a href="#" class="portfolio__item  vertical">
-                    <img src="img/plans.jpg" alt="plans">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="img/ipad.jpg" alt="ipad">
-                </a>
-                <a href="#" class="portfolio__item horizonal">
-                    <img src="img/mac.jpg" alt="mac">
-                </a>
+            <div class="contacts__wrapper">
+                <div class="title_fz16 contacts__circle">Contacts</div>
+                <div class="title_fz36">Contact me</div>
+                <div class="divider"></div>
+                <div class="contacts__text">in any way</div>
+                <div class="contacts__social">
+                    <a href="" class="contacts__link">
+                        <img src="icon/insta.svg" alt="instagram">
+                    </a>
+                    <a href="" class="contacts__link">
+                        <img src="icon/Telegram.svg" alt="telegram">
+                    </a>
+                </div>
+                <div class="contacts__text">or send me a message</div>
+                
+                <form action="#" class="contacts__form">
+                    <div class="contacts__input">
+                        <input type="text" id="name">
+                        <label for="name">Your name</label>
+                    </div>
+                    <div class="contacts__input">
+                        <input type="email" id="email">
+                        <label for="email">Your email</label>
+                    </div>
+                    <div class="contacts__textarea">
+                        <textarea name="text" id="text"></textarea>
+                        <label for="text">Your message</label>
+                        <button class="btn contacts__button">SEND</button>
+                    </div>
+                </form>
                 
             </div>
         </div>

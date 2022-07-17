@@ -28,10 +28,10 @@
 
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__item"><a href="#">MY SKILLS</a></li>
-                    <li class="menu__item"><a href="#">MY WORKS</a></li>
-                    <li class="menu__item"><a href="#">ABOUT ME</a></li>
-                    <li class="menu__item"><a href="#">CONTACT ME</a></li>
+                    <li class="menu__item"><a href="#skill">MY SKILLS</a></li>
+                    <li class="menu__item"><a href="#portfolio">MY WORKS</a></li>
+                    <li class="menu__item"><a href="#about">ABOUT ME</a></li>
+                    <li class="menu__item"><a href="#contact">CONTACT ME</a></li>
                 </ul>
             </nav>
 
@@ -56,19 +56,20 @@
                 <h1 class="promo__title">I am web-developer 
                     from Israel.</h1>
                 <div class="promo__btns">
-                    <a href="#" class="promo__link btn">Portfolio</a>
-                    <a href="3" class="promo__link">About me</a>
+                    <a href="#portfolio" class="promo__link btn">Portfolio</a>
+                    <a href="#about" class="promo__link">About me</a>
                 </div>
             </div>
 
        </div>
     </section>
 
-    <section class="skills">
-        <h2 class="title_fz36">My skills</h2>
-        <div class="divider"></div>
+    <section id="skill" class="skills">
+        
         <div class="container">
-           <div class="skills__wrapper">
+            <h2 class="title_fz36">My skills</h2>
+            <div class="divider"></div>
+            <div class="skills__wrapper">
                 <div class="skills__skill">
 
                     <div class="skills__icon skills_circle">
@@ -86,16 +87,16 @@
                     </div>
                     <div class="skills__text">
                         <div class="skills__subtitle">UI/UX Design</div>
-                        <div class="skills__descr">UI/UX Design. <br> Using Figma and Adobe XD.</div>
+                        <div class="skills__descr">UI/UX Design.  Using Figma and Adobe XD.</div>
                 </div>
                     </div>
-           </div>
+            </div>
 
         </div>
         
     </section>
 
-    <section class="portfolio">
+     <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="title_fz16 portfolio_circle">Portfolio</h2>
             <div class="title_fz36">My works</div>
@@ -122,26 +123,11 @@
                 
             </div>
         </div>
-    </section>
+    </section> 
 
     
-    <!-- <section class="use">
-        <div class="container">
-            <div class="title_fz16  use_circle">What I use</div>
-            <div class="use__items">
-                <div class="use__item"><img src="icon/html5.svg" alt="html"></div>
-                <div class="use__item"><img src="icon/css3.svg" alt="css"></div>
-                <div class="use__item"><img src="icon/bootstrap.svg" alt="boodstrap"></div>
-                <div class="use__item"><img src="icon/Jquery.svg" alt="jquery"></div>
-                <div class="use__item"><img src="icon/JS.svg" alt="js"></div>
-                <div class="use__item"><img src="icon/figma.svg" alt="figma"></div>
-                <div class="use__item"><img src="icon/adobe.svg" alt="Adobe"></div>
-            </div>
 
-        </div>
-    </section> --> 
-
-    <section class="about">
+    <section id="about" class="about">
        <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
@@ -157,11 +143,11 @@
                 </div>
             </div>
        </div>
-    </section>
+    </section> 
 
     
 
-    <section class="contacts">
+     <section id="contact" class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="title_fz16 contacts__circle">Contacts</div>
@@ -180,23 +166,29 @@
                 
                 <form action="#" class="contacts__form">
                     <div class="contacts__input">
-                        <input type="text" id="name">
+                        <input required type="text" id="name">
                         <label for="name">Your name</label>
                     </div>
                     <div class="contacts__input">
-                        <input type="email" id="email">
+                        <input  required type="email" id="email">
                         <label for="email">Your email</label>
                     </div>
                     <div class="contacts__textarea">
                         <textarea name="text" id="text"></textarea>
                         <label for="text">Your message</label>
+                    </div>
+                    <div class="contacts__trigger">
                         <button class="btn contacts__button">SEND</button>
+                        <div class="contacts__policy">
+                            <input required type="checkbox">
+                            <span>Я согласен(а) с <a href="#">политикой конфиденциальности</a></span>
+                        </div>
                     </div>
                 </form>
                 
             </div>
         </div>
-    </section>
+    </section> 
 
 
  <script src="js/script.js"></script>   
